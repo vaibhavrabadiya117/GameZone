@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racing moto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="
+height:90vh;
+width:100%;
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(cargame.jpg);
+background-size: cover;
+background-repeat: fit-cover;">
+    <div id="game"style="background-color:#fff;">
+        <div id="bluecar"><img src="blue.png" alt=""></div>
+        <div id="racecar"><img src="race.png" alt=""></div>
+    </div>
+    <div id="result">
+        <h1>💁GAME OVER</h1>
+        <p id="score"></p>
+        <button id="btn" onclick="location.reload()">Restart..👍</button>
+        <div><button id="exit" 
+            onclick="history.back()">EXIT
+                🏡</button>
+        </div>
+
+    </div>
+
+    <audio id="jumpsound" src="jumpsound1.mp3"></audio>
+    <script src="main.js"></script>
+</body>
+</html>
